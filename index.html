@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Multi Step Form">
+    <meta name="description" content="Multi Step Form">
+    <meta name="author" content="xWhiteCode">
+    <link rel="icon" href="assets/images/favicon-32x32.png" type="image/png" sizes="32x32">
+    <title>Multi Step Form</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --marine-blue: hsl(213, 96%, 18%);
+        --purplish-blue: hsl(243, 100%, 62%);
+        --pastel-blue: hsl(228, 100%, 84%);
+        --light-blue: hsl(206, 94%, 87%);
+        --strawberry-red: hsl(354, 84%, 57%);
+        --cool-gray: hsl(231, 11%, 63%);
+        --light-gray: hsl(229, 24%, 87%);
+        --magnolia: hsl(217, 100%, 97%);
+        --alabaster: hsl(231, 100%, 99%);
+        --white: hsl(0, 0%, 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+     For full functionality of this site it is necessary to enable JavaScript.
+     Here are the <a href="https://www.enable-javascript.com/">
+     instructions how to enable JavaScript in your web browser</a>.
+    </noscript>
+    <main>
+      <div class="laptop:line height">
+        <div class="laptop:size laptop:line">
+          <div class="sidebar line">
+            <ul class="steps line laptop:block self-start">
+              <li><button class="step line active" type="button" aria-label="Your info" aria-expanded="true">
+                <span><strong class="circle num line">1</strong></span>
+                <span class="hidden laptop:show">
+                  <span class="gray">STEP 1</span>
+                  <span><strong>Your info</strong></span>
+                </span>
+              </button></li>
+              <li><button class="step line" type="button" aria-label="Select plan" aria-expanded="false" disabled>
+                <span><strong class="circle num line">2</strong></span>
+                <span class="hidden laptop:show">
+                  <span class="gray">STEP 2</span>
+                  <span><strong>Select plan</strong></span>
+                </span>
+              </button></li>
+              <li><button class="step line" type="button" aria-label="Add-ons" aria-expanded="false" disabled>
+                <span><strong class="circle num line">3</strong></span>
+                <span class="hidden laptop:show">
+                  <span class="gray">STEP 3</span>
+                  <span><strong>Add-ons</strong></span>
+                </span>
+              </button></li>
+              <li><button class="step line" type="button" aria-label="Summary" aria-expanded="false" disabled>
+                <span><strong class="circle num line">4</strong></span>
+                <span class="hidden laptop:show">
+                  <span class="gray">STEP 4</span>
+                  <span><strong>Summary</strong></span>
+                </span>
+              </button></li>
+            </ul>
+          </div>
+          <div class="data self-start">
+            <div class="effect">
+              <h1 id="heading"></h1>
+              <p class="gray" id="hint"></p>
+              <div id="form"></div>
+            </div>
+            <div class="controls line">
+              <button type="button" class="control hidden" id="back" aria-label="Go Back a Step" disabled>Go Back</button>
+              <button type="button" class="control" id="next" aria-label="Next Step">Next Step</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
